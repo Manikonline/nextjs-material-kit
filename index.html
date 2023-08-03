@@ -86,7 +86,7 @@
             </div>
 
             <div>
-
+                <!-- picks your color -->
                 <div style="margin-top: 60px ;margin-left: 90px;">
 
                     <p>Picks your Color</p>
@@ -170,7 +170,7 @@
                 <div style="display: flex;">
                     <div>
                         <div>
-                            <h3>Progress Bars</h3>
+                            <h3 style="font-size: 30px;">Progress Bars</h3>
                         </div>
                         <div style="width: 450px; height: 1px; padding: 1px;background: linear-gradient(
                         to right, #7D20D4, #7D20D4, 
@@ -186,7 +186,7 @@
                         </div>
                     </div>
                     <div style="margin-left: 90px;">
-                        <h3>Pagination</h3>
+                        <h3 style="font-size: 30px;">Pagination</h3>
                         <div style="color: gray;">
                             <span style="cursor: pointer;">1</span>
                             <span style="margin-left: 30px;cursor: pointer; ">--</span>
@@ -212,16 +212,52 @@
                     </div>
                 </div>
             </div>
-
+      <!------------ slider ----------- -->
             <div style="margin-top: 60px ;margin-left: 90px;">
-                <h3>Sliders</h3>
+                <!-- <h3 style="font-size: 30px;">Sliders</h3> -->
                 <div style="display: flex;">
                     <div>
                         <h3>Sliders</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,</p>
+    <style>
+        .slider {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 10px;
+            border-radius: 5px;
+            background: #6704c4;
+            outline: none;
+            opacity: 0.7;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+        }
+
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #05ABC1;
+            cursor: pointer;
+        }
+
+        .slider::-moz-range-thumb {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #000800;
+            cursor: pointer;
+        }
+     
+    </style>
+
+    <input  type="range" min="0" max="100" value="25" class="slider" oninput="(this.id === 'range1') ? (range2.value = (parseInt(this.value) >= parseInt(range2.value)) ? this.value : range2.value) : (range1.value = (parseInt(this.value) <= parseInt(range1.value)) ? this.value : range1.value)">
+    <input type="range" min="0" max="100" value="75" class="slider" id="range2">
+
+
                     </div>
-                    <div>
-                        <h3>Badges</h3>
+                    <div style="margin-left: 20px;">
+                        <h3 style="font-size: 30px;">Badges</h3>
                         <button
                             style="background-color:gray;padding: 5px; border-radius: 15px;cursor: pointer; border: none; color: white;">DEFAULT</button>
                         <button
@@ -245,7 +281,7 @@
             <div style="margin-top: 60px ;margin-left: 90px;">
                 <div style="display: flex;">
                     <div>
-                        <h3>Menu</h3>
+                        <h3 style="font-size: 30px;">Menu</h3>
                         <div style="background-color: #7D20D4;  border-radius: 5px; padding: 7px;">
                             <ul style="list-style: none; display: flex; padding-right: 170px; color: white;">
                                 <li>MENU</li>
@@ -256,7 +292,7 @@
                         </div>
                     </div>
                     <div>
-                        <h3>Menu with icons</h3>
+                        <h3 style="font-size: 30px;">Menu with icons</h3>
                         <div
                             style=" margin-left: 20px ; width: 500px;  background-color: #05ABC1; border-radius: 5px; padding: 7px;">
                             <div style="display: flex; justify-content: space-between;">
@@ -280,7 +316,7 @@
 
             <!-- navigation -->
             <div style="margin-top: 60px ;">
-                <h3 style="margin-left: 90px;">Navigation</h3>
+                <h3 style="margin-left: 90px;font-size: 30px;">Navigation</h3>
                 <div style="display: flex;justify-content: space-around; background-color: #E91D62; padding: 15px;">
                     <div style="margin-top: 8px; color: white ;cursor: pointer;">
                         <span style="margin-left: 20px;">Brand</span>
@@ -393,7 +429,7 @@
 
             <div style="margin-top: 60px ; background-color: #EEEEEE;padding: 30px;">
                 <div>
-                    <h3>Navigation Tabs</h3>
+                    <h3 style="font-size: 30px;">Navigation Tabs</h3>
                 </div>
                 <div style="display: flex; margin-left: 25px;">
 
@@ -460,7 +496,7 @@
             <!-- Navigation pills -->
 
             <div style="margin-top: 60px ;margin-left: 50px;">
-                <h3>Navigation Pills</h3>
+                <h3 style="font-size: 30px;">Navigation Pills</h3>
                 <p>with icons</p>
                 <div style="display: flex;">
                     <!-- left side -->
@@ -556,57 +592,528 @@
             <!-- Notification -->
 
             <div style="margin-top: 60px ;">
-                <h3 style="margin-left: 70px;">Notification</h3>
+                <h3 style="margin-left: 70px;font-size: 30px;">Notification</h3>
                 <div style="margin-top: 25px ;">
                     <!-- info alert -->
                     <div style="display: flex;justify-content: space-around; background-color: #05ABC1; padding: 15px;">
                         <div style="margin-top: 8px; color: white ;cursor: pointer;">
-                            <span style="margin-left: 10px;"><span style="color: white; font-weight: bolder; font-size: 20px;"><i class="fa-solid fa-circle-exclamation" style="color: white;"></i> INFO ALERT:</span> You've got some friends nearby, stop looking at your phone and find them...</span>
+                            <span style="margin-left: 10px;"><span
+                                    style="color: white; font-weight: bolder; font-size: 20px;"><i
+                                        class="fa-solid fa-circle-exclamation" style="color: white;"></i> INFO
+                                    ALERT:</span> You've got some friends nearby, stop looking at your phone and find
+                                them...</span>
                         </div>
                         <div style="color: white ;cursor: pointer; display: flex;">
-                           
-                            <div style="margin-left: 15px; margin-top: 10px;"><i class="fa-regular fa-circle-xmark" style="color: white;"></i></div>
+
+                            <div style="margin-left: 15px; margin-top: 10px;"><i class="fa-regular fa-circle-xmark"
+                                    style="color: white;"></i></div>
                         </div>
                     </div>
                     <!-- success alert -->
-                    <div style="display: flex;justify-content: space-around; background-color: #5BB760; padding: 15px; margin-top: 20px;">
+                    <div
+                        style="display: flex;justify-content: space-around; background-color: #5BB760; padding: 15px; margin-top: 20px;">
                         <div style="margin-top: 8px; color: white ;cursor: pointer;">
-                            <span style="margin-left: 10px;"><span style="color: white; font-weight: bolder; font-size: 20px;"><i class="fa-solid fa-check" style="color: white;"></i> SUCCESS ALERT:</span> You've got some friends nearby, stop looking at your phone and find them...</span>
+                            <span style="margin-left: 10px;"><span
+                                    style="color: white; font-weight: bolder; font-size: 20px;"><i
+                                        class="fa-solid fa-check" style="color: white;"></i> SUCCESS ALERT:</span>
+                                You've got some friends nearby, stop looking at your phone and find them...</span>
                         </div>
                         <div style="color: white ;cursor: pointer; display: flex;">
-                           
-                            <div style="margin-left: 15px; margin-top: 10px;"><i class="fa-regular fa-circle-xmark" style="color: white;"></i></div>
+
+                            <div style="margin-left: 15px; margin-top: 10px;"><i class="fa-regular fa-circle-xmark"
+                                    style="color: white;"></i></div>
                         </div>
                     </div>
                     <!-- WARNING ALERT -->
-                    <div style="display: flex;justify-content: space-around; background-color: #FFA119; padding: 15px; margin-top: 20px;">
+                    <div
+                        style="display: flex;justify-content: space-around; background-color: #FFA119; padding: 15px; margin-top: 20px;">
                         <div style="margin-top: 8px; color: white ;cursor: pointer;">
-                            <span style="margin-left: 10px;"><span style="color: white; font-weight: bolder; font-size: 20px;"><i class="fa-solid fa-triangle-exclamation" style="color: white;"></i> WARNING ALERT:</span> You've got some friends nearby, stop looking at your phone and find them...</span>
+                            <span style="margin-left: 10px;"><span
+                                    style="color: white; font-weight: bolder; font-size: 20px;"><i
+                                        class="fa-solid fa-triangle-exclamation" style="color: white;"></i> WARNING
+                                    ALERT:</span> You've got some friends nearby, stop looking at your phone and find
+                                them...</span>
                         </div>
                         <div style="color: white ;cursor: pointer; display: flex;">
-                           
-                            <div style="margin-left: 15px; margin-top: 10px;"><i class="fa-regular fa-circle-xmark" style="color: white;"></i></div>
+
+                            <div style="margin-left: 15px; margin-top: 10px;"><i class="fa-regular fa-circle-xmark"
+                                    style="color: white;"></i></div>
                         </div>
                     </div>
 
                     <!-- DANGER ALERT -->
-                    <div style="display: flex;justify-content: space-around; background-color: #F45A4E; padding: 15px; margin-top: 20px;">
+                    <div
+                        style="display: flex;justify-content: space-around; background-color: #F45A4E; padding: 15px; margin-top: 20px;">
                         <div style="margin-top: 8px; color: white ;cursor: pointer;">
-                            <span style="margin-left: 10px;"><span style="color: white; font-weight: bolder; font-size: 20px;"><i class="fa-solid fa-circle-exclamation"></i> DANGER ALERT:</span> You've got some friends nearby, stop looking at your phone and find them...</span>
+                            <span style="margin-left: 10px;"><span
+                                    style="color: white; font-weight: bolder; font-size: 20px;"><i
+                                        class="fa-solid fa-circle-exclamation"></i> DANGER ALERT:</span> You've got some
+                                friends nearby, stop looking at your phone and find them...</span>
                         </div>
                         <div style="color: white ;cursor: pointer; display: flex;">
-                           
-                            <div style="margin-left: 15px; margin-top: 10px;"><i class="fa-regular fa-circle-xmark" style="color: white;"></i></div>
+
+                            <div style="margin-left: 15px; margin-top: 10px;"><i class="fa-regular fa-circle-xmark"
+                                    style="color: white;"></i></div>
                         </div>
                     </div>
                 </div>
 
             </div>
 
+            <!-- Typography section -->
+            <div style="margin-top: 60px ;margin-left: 90px; color: gray;">
+                <h3 style="font-size: 30px;">Typography</h3>
+                <div style="display: flex;">
+                    <div style="margin-top: 30px; color: gray;">Header1</div>
+                    <h1 style="margin-left: 200px ;color: black; font-weight: 100;">The Life of Material Kit</h1>
+                </div>
+
+                <div style="display: flex;">
+                    <div style="margin-top: 30px; color: gray;">Header2</div>
+                    <h2 style="margin-left: 200px ; color: black; font-weight: 100;">The Life of Material Kit</h2>
+                </div>
+
+                <div style="display: flex;">
+                    <div style="margin-top: 30px; color: gray;">Header3</div>
+                    <h3 style="margin-left: 200px ; color: black; font-weight: 100;">The Life of Material Kit</h3>
+                </div>
+
+                <div style="display: flex;">
+                    <div style="margin-top: 30px; color: gray;">Header4</div>
+                    <h4 style="margin-left: 200px ; color: black; font-weight: 100;">The Life of Material Kit</h4>
+                </div>
+
+                <div style="display: flex;">
+                    <div style="margin-top: 30px; color: gray;">Header5</div>
+                    <h5 style="margin-left: 200px ; color: black; font-weight: 100;">The Life of Material Kit</h5>
+                </div>
+
+                <div style="display: flex;">
+                    <div style="margin-top: 30px; color: gray;">Header6</div>
+                    <h6 style="margin-left: 200px ; color: black; font-weight: 100;">The Life of Material Kit</h6>
+                </div>
+
+                <div style="display: flex;">
+                    <div style="margin-top: 30px; color: gray;">Header1</div>
+                    <h1 style="margin-left: 200px;font-weight: bolder; color: #414D5D;">The Life of Material Kit</h1>
+                </div>
+
+                <div style="display: flex;">
+                    <div style="margin-top: 30px; color: gray;">Header2</div>
+                    <h2 style="margin-left: 200px;font-weight: bolder; color: #414D5D;">The Life of Material Kit</h2>
+                </div>
+
+                <div style="display: flex;">
+                    <div style="margin-top: 30px; color: gray;">Header3</div>
+                    <h3 style="margin-left: 200px;font-weight: bolder; color: #414D5D;">The Life of Material Kit</h3>
+                </div>
+
+                <div style="display: flex;">
+                    <div style="margin-top: 30px; color: gray;">Header4</div>
+                    <h4 style="margin-left: 200px;font-weight: bolder; color: #414D5D;">The Life of Material Kit</h4>
+                </div>
+
+
+                <!-- paragraph -->
+                <div style="display: flex;">
+                    <div style="margin-top: 30px; color: gray;">Paragraph</div>
+                    <p style="margin-left: 200px; padding-right: 50px;">I will be the leader of a company that ends up
+                        being worth billions of dollars, because I got the answers. I
+                        understand culture. I am the
+                        nucleus I think that's a responsibility that i have to push possibilities, to show people, this
+                        is the level that
+                        things could be at</p>
+                </div>
+                <!-- Quote -->
+                <div style="display: flex;">
+                    <div style="margin-top: 30px; color: gray;">Quote</div>
+                    <blockquote style="margin-left: 260px; padding-right: 50px;">I will be the leader of a company that
+                        ends up being worth billions of dollars, because I got the answers. I
+                        understand culture. I am the
+                        nucleus I think that's a responsibility that i have to push possibilities, to show people, this
+                        is the level that
+                        things could be at</blockquote>
+                </div>
+
+                <!-- Muted Text -->
+                <div style="display: flex;">
+                    <div style="margin-top: 30px; color: gray;">Muted Text</div>
+                    <p style="margin-left: 185px; padding-right: 50px;color: grey;">I will be the leader of a company
+                        that ends up being worth billions of dollars, because I got the answers...</p>
+                </div>
+                <!-- Primary Text -->
+                <div style="display: flex;">
+                    <div style="margin-top: 30px; color: gray;">Primary Text</div>
+                    <p style="margin-left: 173px; padding-right: 50px;color: #c56cd3;">I will be the leader of a company
+                        that ends up being worth billions of dollars, because I got the answers...</p>
+                </div>
+                <!-- INFO Text -->
+                <div style="display: flex;">
+                    <div style="margin-top: 30px; color: gray;">info Text</div>
+                    <p style="margin-left: 205px; padding-right: 50px;color: #6cd1e0;">I will be the leader of a company
+                        that ends up being worth billions of dollars, because I got the answers...</p>
+                </div>
+                <!-- Success Text -->
+                <div style="display: flex;">
+                    <div style="margin-top: 30px; color: gray;">Success Text</div>
+                    <p style="margin-left: 175px; padding-right: 50px;color: rgb(45, 207, 45);">I will be the leader of
+                        a company that ends up being worth billions of dollars, because I got the answers...</p>
+                </div>
+                <!-- Warning Text -->
+                <div style="display: flex;">
+                    <div style="margin-top: 30px; color: gray;">Warning Text</div>
+                    <p style="margin-left: 171px; padding-right: 50px;color:orange">I will be the leader of a company
+                        that ends up being worth billions of dollars, because I got the answers...</p>
+                </div>
+
+                <!-- Danger Text -->
+                <div style="display: flex;">
+                    <div style="margin-top: 30px; color: gray;">Danger Text</div>
+                    <p style="margin-left: 178px; padding-right: 50px;color:orangered">I will be the leader of a company
+                        that ends up being worth billions of dollars, because I got the answers...</p>
+                </div>
+                <!-- Small Tag -->
+                <div style="display: flex;">
+                    <div style="margin-top: 30px; color: gray;">Small Tag</div>
+                    <div>
+                        <h2 style="margin-left: 190px; padding-right: 50px;color:black; font-weight: 100;">Header with
+                            small subtitle</h2>
+                        <p style="margin-left: 190px; padding-right: 50px;color:black; font-weight: 100;">Use "Small"
+                            tag for the headers</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <!-- images -->
+            <div style="margin-top: 60px ;margin-left: 90px;">
+                <h3 style="font-size: 30px;">Images</h3>
+                <div style="display: flex;">
+                    <div>
+                        <h5 style="margin-left: 20px; font-weight: 100;">Rounded Image</h5>
+                        <img style="width: 170px ; height: 160px ; border-radius: 10px;"
+                            src="https://i.ibb.co/L63wdVD/userphoto.jpg" alt="">
+                    </div>
+
+                    <div>
+                        <h5 style="margin-left: 180px; font-weight: 100;">Circle Image</h5>
+                        <img style="width: 170px ; height: 160px ; margin-left: 150px; border-radius: 100%;"
+                            src="https://i.ibb.co/L63wdVD/userphoto.jpg" alt="">
+                    </div>
+
+                    <div>
+                        <h5 style="margin-left: 180px;font-weight: 100;">Rounded Raised</h5>
+                        <img style="width: 170px ; height: 160px ; margin-left: 150px; border-radius: 10px;"
+                            src="https://i.ibb.co/L63wdVD/userphoto.jpg" alt="">
+                    </div>
+
+                    <div>
+                        <h5 style="margin-left: 180px;font-weight: 100;">Circle Raised</h5>
+                        <img style="width: 170px ; height: 160px ; margin-left: 150px;border-radius: 100%;"
+                            src="https://i.ibb.co/L63wdVD/userphoto.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- JAVASCRIPT COMPONENTS -->
+            <div style="margin-top: 60px ;margin-left: 90px;">
+                <h3 style="font-size: 30px;">Javascript Components</h3>
+                <div style="display: flex;">
+                    <!-- left side -->
+                    <div>
+                        <div>
+                            <h4 style="font-size: 22px ; font-weight: 100;">Modal</h4>
+                            <button
+                                style=" padding-left:30px;padding-top: 10px;padding-right:30px;padding-bottom: 10px; background-color:#9C28B1;cursor: pointer; color: white; border: none; border-radius: 7px;"><i
+                                    class="fa-solid fa-file-lines"></i> CLASSIC</button>
+                        </div>
+                        <h5 style="font-weight: 100; font-size: 22px;">Datetime Picker</h5>
+                        <span style="color:gray;font-weight: 200;">Datetime Picker</span><br>
+                        <input type="text"
+                            style="border-top: none; border-left: none; border-right: none; outline: none;margin-top: 5px;"
+                            placeholder="Datetime Picker Here">
+                    </div>
+                    <!-- right side -->
+                    <div style="margin-left: 350px;">
+                        <div>
+                            <h4 style="font-size: 22px ; font-weight: 100;">Popovers</h4>
+                            <div>
+                                <button
+                                    style="background-color:gray;border-radius: 2px; padding: 10px;border: none; color: white;cursor: pointer; ">ON
+                                    LEFT</button>
+                                <button
+                                    style="background-color: gray;border-radius: 2px; padding: 10px;border: none; color: white;cursor: pointer; ">ON
+                                    TOP</button>
+                                <button
+                                    style="background-color:gray;border-radius: 2px; padding: 10px;border: none; color: white;cursor: pointer; "></i>ON
+                                    BOTTOM</button>
+                                <button
+                                    style="background-color:gray;border-radius: 2px; padding: 10px;border: none; color: white;cursor: pointer; "></i>ON
+                                    RIGHT</button>
+
+
+                            </div>
+                        </div>
+                        <div>
+                            <h4 style="font-size: 22px ; font-weight: 100;">Tooltips</h4>
+                            <div>
+                                <button
+                                    style="background-color:gray;border-radius: 2px; padding: 10px;border: none; color: white;cursor: pointer; ">ON
+                                    LEFT</button>
+                                <button
+                                    style="background-color: gray;border-radius: 2px; padding: 10px;border: none; color: white;cursor: pointer; ">ON
+                                    TOP</button>
+                                <button
+                                    style="background-color:gray;border-radius: 2px; padding: 10px;border: none; color: white;cursor: pointer; "></i>ON
+                                    BOTTOM</button>
+                                <button
+                                    style="background-color:gray;border-radius: 2px; padding: 10px;border: none; color: white;cursor: pointer; "></i>ON
+                                    RIGHT</button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- carousel -->
+            <div style="margin-top: 80px ;margin-left: 90px;">
+                <h3 style="font-size: 30px;"> Carousel</h3>
+                <!DOCTYPE html>
+
+                <div style="position: relative; width: 700px;height: 300px; overflow: hidden; margin: 20px auto;">
+                    <div style="display: flex; transition: transform 0.3s ease-in-out;" id="carousel">
+                        <img width="100%" src="https://i.ibb.co/7z5Ffn2/carousel-1.jpg" alt="Image 1">
+                        <img width="100%" src="https://i.ibb.co/PCmJF4v/carousel-2.jpg" alt="Image 2">
+                        <img width="100%" src="https://i.ibb.co/7z5Ffn2/carousel-1.jpg" alt="Image 3">
+                    </div>
+                    <div
+                        style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);display: flex;">
+                        <span style="cursor: pointer; margin: 0 5px;" class="control-button" onclick="prevImage()"><i
+                                class="fa-regular fa-circle-dot"></i></span>
+                        <span style="cursor: pointer; margin: 0 5px;" class="control-button" onclick="nextImage()"><i
+                                class="fa-regular fa-circle-dot"></i></span>
+                    </div>
+                </div>
+
+                <script>
+                    const carousel = document.getElementById('carousel');
+                    const images = carousel.querySelectorAll('img');
+                    const controls = document.querySelectorAll('.control-button');
+                    let currentIndex = 0;
+
+                    function showImage(index) {
+                        carousel.style.transform = `translateX(-${index * 100}%)`;
+                    }
+
+                    function nextImage() {
+                        currentIndex = (currentIndex + 1) % images.length;
+                        showImage(currentIndex);
+                    }
+
+                    function prevImage() {
+                        currentIndex = (currentIndex - 1 + images.length) % images.length;
+                        showImage(currentIndex);
+                    }
+
+                    controls.forEach(control => {
+                        control.addEventListener('click', () => {
+                            clearInterval(autoSlide);
+                        });
+                    });
+
+                    let autoSlide = setInterval(nextImage, 3000); 
+                </script>
+
+                <div style="text-align: center; margin-top: 80px;">
+                    <p style="font-size: 25px;color: black;">Completed With examples</p>
+                    <p style="padding-left: 30px;padding-right: 30px; padding-top: 0px;">The kit comes with three
+                        pre-built pages to help you get started faster. You can change the
+                        text and images and you're good to go. More importantly, looking at them will give you a
+                        picture of what you can build with this powerful kit.</p>
+                </div>
+                <!--  -->
+            </div>
+
+            <div style="margin-top: 60px ;">
+                <div
+                    style="background-image: url(https://i.ibb.co/fn0pZyq/stnder.jpg); background-repeat: no-repeat ; background-size: cover; padding-top:200px;padding-bottom: 400px;">
+                    <!--  -->
+                    <div style="margin-left: 125px;">
+                        <div
+                            style="width: 350px;height:300px;padding-left: 10px;; padding-right: 10px; padding-top: 30px; background-color: white; color: black; border-radius: 6px; margin-left: 365px; margin-top: 50px;">
+                            <h2 style="font-size: 20px; font-weight: 200; margin-left: 110px;">Or be Classical</h2>
+                            <div style="margin-left: 50px;">
+                                <input
+                                    style="margin-top: 15px; padding-top: 2px;padding-bottom: 2px;padding-left: 5px;padding-right: 5px; border-left: none; border-top: none; border-right: none; outline: none;"
+                                    type="text" placeholder="First Name"><i class="fa-solid fa-user-group"></i><br>
+                                <input
+                                    style="margin-top: 15px; padding-top: 2px;padding-bottom: 2px;padding-left: 5px;padding-right: 5px; border-left: none; border-top: none; border-right: none; outline: none;"
+                                    type="email" placeholder="Email"><i class="fa-solid fa-envelope"></i><br>
+                                <input
+                                    style="margin-top: 15px; padding-top: 2px;padding-bottom: 2px;padding-left: 5px;padding-right: 5px; border-left: none; border-top: none; border-right: none; outline: none;"
+                                    type="password" placeholder="Password"><i class="fa-solid fa-lock"></i>
+
+                                <div
+                                    style="font-size: 18px; font-weight: 100; margin-left: 60px; margin-top: 60px; color: #9326fa; cursor:pointer;">
+                                    GET STARTED</div>
+                            </div>
+
+                        </div>
+                        <div
+                            style="width: 300px;height: 120px;padding-left: 10px;padding-right: 10px; padding-bottom: 10px ; padding-top: 10px; -webkit-padding-start:10px;margin-top: 80px; background-color: #7D20D4; color: white; border-radius: 6px; margin-left: 390px;margin-top: -430px;">
+                            <div style="margin-left: 110px;">
+                                <h2 style="font-size: 25px; font-weight: 200; margin-left: 10px;">Login</h2>
+                                <i style="cursor: pointer;" class="fa-brands fa-twitter"></i>
+                                <i style="margin-left: 5px;cursor: pointer;" class="fa-brands fa-square-facebook"></i>
+                                <i style="margin-left: 5px;cursor: pointer;" class="fa-brands fa-google"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div style="margin-top: 300px ;">
+                       <img style="width: 100%;height: 450px;" src="https://i.ibb.co/fn0pZyq/stnder.jpg" alt="">
+                     </div> -->
+                </div>
+            </div>
+
+
+             <div style="margin-top: 60px ;margin-left: 30px;">
+                   <h6  style="text-align: center; color: #9326fa; margin-right: 25px;cursor: pointer;">VIEW LOGIN PAGE </h6>
+
+                   <div style="display: flex;">
+                    <!-- left side -->
+                    <div>
+                        <div
+                        style="background-image: url(https://i.ibb.co/CbzZpLC/universe.jpg);background-size: cover;background-repeat: no-repeat; width: 600px; height: 420px;border-radius: 6px; color: white;">
+                        <div style="display: flex; justify-content: space-between;padding-left: 60px;padding-right: 60px; margin-left: 15px; border-radius: 10px;">
+                            <div>
+                                <p style="font-weight: bolder; font-size:25px;cursor: pointer;">ReactJS</p>
+                            </div>
+                            <div>
+                                <ul style="list-style: none; display: flex ;">
+                                    <li style="margin-left: 15px;cursor: pointer;">Home</li>
+                                    <li style="margin-left: 15px;cursor: pointer;">
+                                        About</li>
+                                    <li style="margin-left: 15px;cursor: pointer;">Contact
+                                    </li>
+                                    <li style="margin-left: 15px;cursor: pointer;"><i class="fa-brands fa-twitter"></i></li>
+                                    <li style="margin-left: 15px;cursor: pointer;"><i class="fa-brands fa-facebook"></i></li>
+                                    <li style="margin-left: 15px;cursor: pointer;"><i class="fa-brands fa-square-instagram"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+            
+                        <div style="margin-left: 80px;margin-top: 150px;">
+                            <h3 style="font-size: 40px;"> ReactJS Material Kit.</h3>
+                            <p>Start your learning with us</p>
+                        </div>
+                    </div>
+                    <h5 style="text-align: center; color: #9326fa; cursor:pointer;">VIEW LANGING PAGE</h5>
+                    </div>
+                    <!-- right side -->
+                    <div>
+                        <div>
+                            <div
+                            style="background-image: url(https://i.ibb.co/Y2Kgqwy/typescript.jpg);background-size: cover;background-repeat: no-repeat; width: 600px; height: 420px;border-radius: 6px; color: white; margin-left: 15px;">
+                            <div style="display: flex; justify-content: space-between;padding-left: 60px;padding-right: 60px;">
+                                <div>
+                                    <p style="font-weight: bolder; font-size:25px;cursor: pointer;">TypeScript</p>
+                                </div>
+                                <div>
+                                    <ul style="list-style: none; display: flex ;">
+                                        <li style="margin-left: 15px;cursor: pointer;">Home</li>
+                                        <li style="margin-left: 15px;cursor: pointer;">
+                                            About</li>
+                                        <li style="margin-left: 15px;cursor: pointer;">Contact
+                                        </li>
+                                        <li style="margin-left: 15px;cursor: pointer;">Login</li>
+                                        <li style="margin-left: 15px;cursor: pointer;">SignUp</li>
+                                       
+                                    </ul>
+                                </div>
+                            </div>
+                
+                            <div style="margin-left: 30px;margin-top: 150px;">
+                                <h3 style="font-size: 40px;">TypeScript Learning..</h3>
+                                <p>The best TypeScript learning platform in the word. Let's start...</p>
+                                <div>
+                                    <button style=" padding-left:30px;padding-top: 10px;padding-right:30px;padding-bottom: 10px; background-color:#9C28B1;cursor: pointer; color: white; border: none; border-radius: 7px; padding-bottom: 10px; margin-left: 300px;">Get Starts</button>
+                                </div>
+                            </div>
+                        </div>
+                        <h6 style="text-align: center;cursor:pointer; color: #9326fa; ">VIEW LANGING PAGE</h6>
+                        </div>
+                    </div>
+                   </div>
+             </div>
+             <!-- do you love this UI kit -->
+             <div style="margin-top: 60px ;margin-left: 90px; width: 750px; height: 250px; text-align: center; margin-left: 270px;">
+                <h5 style="font-size: 25px; font-weight: 200;">Do You Love This UI Kit ?</h5>
+                <p>Cause if you do, it can be yours for FREE. Hit the buttons below to navigate to our website
+                    where you can find the kit. We also have the Bootstrap 4 version on plain HTML Start a new
+                    project or give an old Bootstrap project a new look!</p>
+                    <div style="display: flex; margin-left: 100px;">
+                        <div><button style="padding-left: 20px; padding-right: 20px;padding-top: 10px;padding-bottom: 10px; background-color: #7D20D4; color: white; border: none;cursor: pointer;">FREE NEXTJS DOWNLOAD</button></div>
+                        <div><button style="padding-left: 20px; padding-right: 20px;padding-top: 10px;padding-bottom: 10px; background-color: #7D20D4; color: white; border: none;cursor: pointer; margin-left: 5px;">FREE REACT DOWNLOAD</button></div>
+                    </div>
+             </div>
+             <!-- Want more-->
+             <div style="margin-top: 10px ;margin-left: 90px; width: 750px; height: 250px; text-align: center; margin-left: 270px;">
+                <h5 style="font-size: 25px; font-weight: 200;">Want More ?</h5>
+                <p>We've just launched <span style="color:#E91D62 ;">NextJS Material Kit PRO</span>. It has a huge number of components, sections
+                    and example pages. Start Your Development With A Badass Material-Ul and NexJS Kit
+                    inspired by Material Design.</p>
+                    <div style="display: flex; margin-left: 100px;">
+                        <div><button style="padding-left: 20px; padding-right: 20px;padding-top: 10px;padding-bottom: 10px; background-color: #E91D62; color: white; border: none;cursor: pointer;">NEXTJS MATERIAL KIT PRO</button></div>
+                        <div><button style="padding-left: 20px; padding-right: 20px;padding-top: 10px;padding-bottom: 10px; background-color: #E91D62; color: white; border: none;cursor: pointer; margin-left: 5px;">MATERIAL KIT PRO REACT</button></div>
+                    </div>
+             </div>
+
+             <div>
+                <div style="margin-top: 10px ;margin-left: 90px; width: 750px; height: 250px; text-align: center; margin-left: 270px;">
+                    <h5 style="font-size: 25px; font-weight: 200;">Thank You for supporting us!</h5>
+                 
+                        <div style="display: flex; margin-left: 210px;">
+                            <div><button style="padding-left: 13px; padding-right: 13px;padding-top: 10px;padding-bottom: 10px; background-color: #54ACEC; color: white; border: none;cursor: pointer; border-radius: 3px;"><i class="fa-brands fa-twitter"></i> TWEET</button></div>
+                            <div><button style="padding-left: 13px; padding-right: 13px;padding-top: 10px;padding-bottom: 10px; background-color: #3B5997; color: white; border: none;cursor: pointer; margin-left: 5px;border-radius: 3px;"><i class="fa-brands fa-square-facebook"></i> SHARE</button></div>
+                            <div><button style="padding-left: 13px; padding-right: 13px;padding-top: 10px;padding-bottom: 10px; background-color: #333333; color: white; border: none;cursor: pointer; margin-left: 5px; border-radius: 3px;"><i class="fa-brands fa-github"></i> START</button></div>
+                        </div>
+                 </div>
+             </div>
         </section>
     </main>
-    <footer></footer>
+
+    <!-- footer -->
+    <footer>
+        <div style="display: flex; justify-content: space-between;padding-left: 60px;padding-right: 60px;">
+            <div>
+                <ul style="list-style: none; display: flex ;">
+                    <li style="margin-left: 15px;cursor: pointer;">CREATIVE TIM</li>
+                    
+                    <li style="margin-left: 15px;cursor: pointer;">
+                        ABOUT US</li>
+
+                    <li style="margin-left: 15px;cursor: pointer;">BLOG
+                    </li>
+
+                    <li style="margin-left: 15px;cursor: pointer;">LICENSES</li>
+
+                    
+                </ul>
+            </div>
+            <div>
+              <div><p><i class="fa-solid fa-copyright"></i> 2023. made with <i class="fa-solid fa-heart" ></i> by <span style="color: #E91D62;">Creative Tim</span> for a better web.</p></div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
 <!-- style="margin-top: 60px ;margin-left: 90px;" -->
+   <!-- https://i.ibb.co/7z5Ffn2/carousel-1.jpg -->
+<!-- https://i.ibb.co/PCmJF4v/carousel-2.jpg -->
+<!-- https://i.ibb.co/QCLfrFY/carousel-3.jpg -->
