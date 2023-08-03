@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.js">
+</head>
+
+<body style="background-color:beige;">
+    <header>
+        <div
+            style="background-image: url(https://images.pexels.com/photos/18495/pexels-photo.jpg);background-size: cover;background-repeat: no-repeat; width: auto; height: 650px; color: white;">
+            <div style="display: flex; justify-content: space-between;padding-left: 60px;padding-right: 60px;">
+                <div>
+                    <p style="font-weight: bolder; font-size:25px;cursor: pointer;">NextJS Material Kit</p>
+                </div>
+                <div>
+                    <ul style="list-style: none; display: flex ;">
+                        <li style="margin-left: 15px;cursor: pointer;"><i class="fa-solid fa-bars"> </i>COMPONENTS</li>
+                        <li style="margin-left: 15px;cursor: pointer;"><i class="fa-solid fa-file-arrow-up"> </i>
+                            UPGRADE TO PRO</li>
+                        <li style="margin-left: 15px;cursor: pointer;"><i class="fa-solid fa-circle-down"> </i> DOWNLOAD
+                        </li>
+                        <li style="margin-left: 15px;cursor: pointer;"><i class="fa-brands fa-twitter"></i></li>
+                        <li style="margin-left: 15px;cursor: pointer;"><i class="fa-brands fa-facebook"></i></li>
+                        <li style="margin-left: 15px;cursor: pointer;"><i class="fa-brands fa-square-instagram"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="margin-left: 80px;margin-top: 150px;">
+                <h3 style="font-size: 40px;"> NextJS Material Kit.</h3>
+                <p>A Badass Material Kit base on material-UI and NextJS</p>
+            </div>
+        </div>
+        <div style="width: auto; height: 40px;background-color: black; margin-top: 50px;">
+
+        </div>
+    </header>
+    <main>
+        <section
+            style="margin-left: 20px; margin-right: 20px; margin-top: -180px; background-color: white ;padding-top: 20px ;padding-bottom: 20px;">
+            <div style="margin-top: 40px ;margin-left: 90px;">
+                <div>
+                    <h3>Basic Elements</h3>
+                </div>
+            </div>
+            <div style="margin-top: 40px ;margin-left: 90px;">
+                <h3>Buttons</h3>
+                <p>Picks your Style</p>
+                <div style="margin-left: 150px;">
+                    <button
+                        style="background-color: blueviolet;padding: 10px;border: none; color: white;cursor: pointer;">DEFAULT</button>
+                    <button
+                        style="background-color: blueviolet;padding: 7px;border: none; color: white;cursor: pointer; border-radius: 30px;">ROUND</button>
+                    <button
+                        style="background-color: blueviolet;padding: 7px;border: none; color: white;cursor: pointer; border-radius: 30px;"><i
+                            class="fa-solid fa-heart"></i> WITH ICON</button>
+                    <button
+                        style="border-radius:10px; background-color: blueviolet;color: white;cursor: pointer;border: none; "><i
+                            class="fa-solid fa-heart"></i></button>
+                    <button style="border: none;cursor: pointer; color: blueviolet;">SIMPLE</button>
+                </div>
+            </div>
+            <div>
+
+                <div style="margin-top: 40px ;margin-left: 90px;">
+
+                    <p>Picks your Size</p>
+                    <div style="margin-left: 150px;">
+                        <button
+                            style="background-color: blueviolet;padding: 6px;border: none; color: white;cursor: pointer; ">SMALL</button>
+                        <button
+                            style="background-color: blueviolet;padding: 10px;border: none; color: white;cursor: pointer; ">REGULAR</button>
+                        <button
+                            style="background-color: blueviolet;padding: 15px;border: none; color: white;cursor: pointer; "></i>LARGE</button>
+
+                    </div>
+                </div>
+            </div>
+
+            <div>
+
+                <div style="margin-top: 60px ;margin-left: 90px;">
+
+                    <p>Picks your Color</p>
+                    <div style="margin-left: 150px;">
+                        <button
+                            style="background-color:gray;padding: 10px;border: none; color: white;cursor: pointer; ">DEFAULT</button>
+                        <button
+                            style="background-color: blueviolet;padding: 10px;border: none; color: white;cursor: pointer; ">PRIMARY</button>
+                        <button
+                            style="background-color:#05ABC1;padding: 10px;border: none; color: white;cursor: pointer; "></i>INFO</button>
+                        <button
+                            style="background-color:green;padding: 10px;border: none; color: white;cursor: pointer; "></i>SUCCESS</button>
+                        <button
+                            style="background-color: orangered;padding: 10px;border: none; color: white;cursor: pointer; "></i>WARNING</button>
+                        <button
+                            style="background-color: red;padding: 10px;border: none; color: white;cursor: pointer; "></i>DANGER</button><br>
+                        <button
+                            style="background-color: red;padding: 10px;border: none; color: white;cursor: pointer;  margin-top: 10px;"></i>ROSE</button>
+
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 60px ;margin-left: 90px;">
+                <div>
+                    <h3> Inputs</h3>
+                    <div style="padding: 10px;">
+                        <input style="border-top: none; border-left: none; border-right: none; margin-left: 25px;"
+                            type="text" placeholder="Regular">
+
+                        <input style="border-top: none; border-left: none; border-right: none; margin-left: 25px;"
+                            type="text" placeholder="With floating label">
+
+                        <input
+                            style="border-top: none; border-left: none; border-right: none; color: green;margin-left: 25px; "
+                            type="text" value="Success input">
+
+                        <input
+                            style="border-top: none; border-left: none; border-right: none; color: red; margin-left: 25px;"
+                            type="text" value="Error Input">
+                        <br><br><br><br>
+                        <input style="border-top: none; border-left: none; border-right: none; margin-left: 25px; "
+                            type="text" placeholder='With material icon'><i class="fa-solid fa-user-group"></i>
+
+                        <input style="border-top: none; border-left: none; border-right: none;  margin-left: 25px;"
+                            type="text" placeholder="With Font Awesome Icons"><i class="fa-solid fa-users"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div style="display: flex;">
+                <div style="margin-top: 40px ;margin-left: 90px;">
+                    <h3>CheckBoxes</h3>
+                    <input style="margin-top:  10px;" type="checkbox"> Unchecked <br>
+                    <input style="margin-top:  10px;" type="checkbox"> Checked <br>
+                    <input type="checkbox"><span style="color: grey ;margin-top:  10px;"> Disabled Unchecked </span>
+                    <br>
+                    <input type="checkbox"><span style="color: grey; margin-top:  10px;"> Disabled Checked </span> <br>
+                </div>
+                <div style="display: flex;">
+                    <div style="margin-top: 60px ;margin-left: 90px;">
+                        <h3>Radio Buttons</h3>
+                        <input style="margin-top:  10px;" type="radio"> First Radio<br>
+                        <input style="margin-top:  10px;" type="radio"> Second Radio <br>
+                        <input type="radio"><span style="color: grey ;margin-top:  10px;"> Disabled Unchecked Radio
+                        </span> <br>
+                        <input type="radio"><span style="color: grey; margin-top:  10px;"> Disabled Checked Radio
+                        </span> <br>
+                    </div>
+
+                    <div style="margin-top: 40px ;margin-left: 90px;">
+                        <h3>Toggle Buttons</h3>
+                        <div><i style="color: blueviolet;" class="fa-solid fa-toggle-on"></i> Toggle is On</div>
+                        <div style="margin-top: 10px;"><i class="fa-solid fa-toggle-off"></i> Toggle is Off</div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 60px ;margin-left: 90px;">
+
+                <div style="display: flex;">
+                    <div>
+                        <div>
+                            <h3>Progress Bars</h3>
+                        </div>
+                        <div style="width: 450px; height: 1px; padding: 1px;background: linear-gradient(
+                        to right, #7D20D4, #7D20D4, 
+                        #ffb900, #ffb900, #ffb900);  ">
+                        </div>
+                        <div style="width: 450px; height: 1px; padding: 1px;background: linear-gradient(
+                        to right, #7D20D4, #7D20D4, 
+                        #7D20D4, #ffb900, #ffb900); margin-top: 15px; ">
+                        </div>
+                        <div style="width: 450px; height: 1px; padding: 1px;background: linear-gradient(
+                        to right, #7D20D4, #7D20D4, 
+                        #06456e, #05ABC1, #f7cb53); margin-top: 15px; ">
+                        </div>
+                    </div>
+                    <div style="margin-left: 90px;">
+                        <h3>Pagination</h3>
+                        <div style="color: gray;">
+                            <span style="cursor: pointer;">1</span>
+                            <span style="margin-left: 30px;cursor: pointer; ">--</span>
+                            <span style="margin-left: 30px;cursor: pointer; ">5</span>
+                            <span style="margin-left: 30px;cursor: pointer; ">6</span>
+                            <span
+                                style="background-color: #7D20D4; border-radius: 500px; margin-left: 30px;cursor: pointer; padding: 10px; color: white;">7</span>
+                            <span style="margin-left: 30px;cursor: pointer; ">8</span>
+                            <span style="margin-left: 30px;cursor: pointer; ">9</span>
+                            <span style="margin-left: 30px;cursor: pointer; ">--</span>
+                            <span style="margin-left: 30px;cursor: pointer; ">12</span>
+                        </div>
+                        <div style="margin-top: 50px; color: gray;">
+                            <span style="cursor: pointer;">PREV</span>
+                            <span style="margin-left: 30px;cursor: pointer;">1</span>
+                            <span style="margin-left: 30px;cursor: pointer;">2</span>
+                            <span
+                                style="background-color: #05ABC1; cursor: pointer; border-radius: 500px; margin-left: 30px;padding: 10px; color: white;">3</span>
+                            <span style="margin-left: 30px; cursor: pointer;">4</span>
+                            <span style="margin-left: 30px; cursor: pointer;">5</span>
+                            <span style="margin-left: 30px; cursor: pointer;">NEXT</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 60px ;margin-left: 90px;">
+                <h3>Sliders</h3>
+                <div style="display: flex;">
+                    <div>
+                        <h3>Sliders</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,</p>
+                    </div>
+                    <div>
+                        <h3>Badges</h3>
+                        <button
+                            style="background-color:gray;padding: 5px; border-radius: 15px;cursor: pointer; border: none; color: white;">DEFAULT</button>
+                        <button
+                            style="background-color: blueviolet;padding: 5px; border-radius: 15px; cursor: pointer; border: none; color: white;">PRIMARY</button>
+                        <button
+                            style="background-color:#05ABC1;padding: 5px; border-radius: 15px; cursor: pointer;  border: none; color: white;"></i>INFO</button>
+                        <button
+                            style="background-color:green;padding: 5px; border-radius: 15px;cursor: pointer; border: none; color: white;"></i>SUCCESS</button>
+                        <button
+                            style="background-color: orangered;padding: 5px; border-radius: 15px; cursor: pointer; border: none; color: white;"></i>WARNING</button>
+                        <button
+                            style="background-color: red;padding: 5px; border-radius: 15px; cursor: pointer; border: none; color: white;"></i>DANGER</button>
+                        <button
+                            style="background-color: red;padding: 5px; border-radius: 15px; cursor: pointer; border: none; color: white; margin-top: 5px; border-radius: 15px; "></i>ROSE</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menu and Menu with icon -->
+
+            <div style="margin-top: 60px ;margin-left: 90px;">
+                <div style="display: flex;">
+                    <div>
+                        <h3>Menu</h3>
+                        <div style="background-color: #7D20D4;  border-radius: 5px; padding: 7px;">
+                            <ul style="list-style: none; display: flex; padding-right: 170px; color: white;">
+                                <li>MENU</li>
+                                <li style="margin-left: 20px;">LINK</li>
+                                <li style="margin-left: 20px;">LINK</li>
+                                <li style="margin-left: 20px;">DROPDOWN <i class="fa-solid fa-caret-down"></i> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Menu with icons</h3>
+                        <div
+                            style=" margin-left: 20px ; width: 500px;  background-color: #05ABC1; border-radius: 5px; padding: 7px;">
+                            <div style="display: flex; justify-content: space-between;">
+                                <div
+                                    style="margin-top: 20px; font-weight: bold;color: white;margin-left: 10px;font-size: 25px; ">
+                                    Icons</div>
+                                <div>
+                                    <ul style="list-style: none; display: flex; padding-left: 160px; color: white;">
+                                        <li><i class="fa-regular fa-envelope"></i></li>
+                                        <li style="margin-left: 20px;"><i class="fa-regular fa-face-smile"></i></li>
+                                        <li style="margin-left: 20px;padding-right: 10px;"><i
+                                                class="fa-solid fa-gear"></i><i class="fa-solid fa-caret-down"></i></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- navigation -->
+            <div style="margin-top: 60px ;">
+                <h3 style="margin-left: 90px;">Navigation</h3>
+                <div style="display: flex;justify-content: space-around; background-color: #E91D62; padding: 15px;">
+                    <div style="margin-top: 8px; color: white ;cursor: pointer;">
+                        <span style="margin-left: 20px;">Brand</span>
+                        <span style="margin-left: 15px;">Link</span>
+                        <span style="margin-left: 15px;">Link</span>
+                    </div>
+                    <div>
+                        <input type="search"
+                            style="border-top: none;background-color: #E91D62;outline: none; color: white; border-left: none;border-right: none;"
+                            placeholder="Search"><i style="padding: 10px; border-radius:100%;background-color: white;"
+                            class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <div style="margin-top: 25px ;">
+                <div style="display: flex;justify-content: space-around; background-color: #05ABC1; padding: 15px;">
+                    <div style="margin-top: 8px; color: white ;cursor: pointer;">
+                        <span style="margin-left: 20px;">Info Color</span>
+                    </div>
+                    <div style="color: white ;cursor: pointer; display: flex;">
+                        <div><button
+                                style="padding: 10px;border: none;border-radius: 5px; background-color: #37B4C8;color: white;">DISCOVER</button>
+                        </div>
+                        <div style="margin-left: 15px; margin-top: 10px;">PROFILE</div>
+                        <div style="margin-left: 15px; margin-top: 10px;">SETTING</div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 25px ;">
+                <div style="display: flex;justify-content: space-around; background-color: #9C28B1; padding: 15px;">
+                    <div style="margin-top: 8px; color: white ;cursor: pointer;">
+                        <span style="margin-left: 20px;">Primary Color</span>
+                    </div>
+                    <div style="color: white ;cursor: pointer; display: flex;">
+                        <div><button
+                                style="padding: 10px;border: none;border-radius: 5px; background-color: #A73FB8;color: white;"><i
+                                    class="fa-regular fa-compass"></i> DISCOVER</button></div>
+                        <div style="margin-left: 15px; margin-top: 10px;"><i class="fa-regular fa-circle-user"></i>
+                            PROFILE</div>
+                        <div style="margin-left: 15px; margin-top: 10px;"><i class="fa-solid fa-gear"></i> SETTING</div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 25px ;">
+                <div style="display: flex;justify-content: space-around; background-color:black; padding: 15px;">
+                    <div style="margin-top: 8px; color: white ;cursor: pointer;">
+                        <span style="margin-left: 20px;margin-top: 15px;">Navbar With notification</span>
+                    </div>
+                    <div style="color: white ;cursor: pointer; display: flex;">
+                        <div><button
+                                style="padding: 10px;margin-top: 5px; border: none;border-radius: 5px;background-color: black;cursor: pointer; color: white;">
+                                DISCOVER</button></div>
+                        <div style="margin-left: 15px; margin-top: 15px;"> WISHLIST</div>
+                        <div style="margin-left: 15px; margin-top: 5px;"><i
+                                style="padding: 10px;background-color: #E81C61; border-radius: 100%;"
+                                class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div style="margin-left: 15px; margin-top: 10px;"><img
+                                style="width: 30px; height: 30px; border-radius: 100%;"
+                                src="https://i.ibb.co/L63wdVD/userphoto.jpg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 25px ;">
+                <div
+                    style="display: flex;justify-content: space-around; background-color:rgb(236, 230, 230); padding: 15px;">
+                    <div style="margin-top: 10px; color:black ;cursor: pointer;">
+                        <span style="margin-left: 20px; ">Navbar with profile</span>
+                    </div>
+                    <div style="cursor: pointer; display: flex;">
+                        <div style="margin-top: 15px;">
+                            DISCOVER
+                        </div>
+                        <div style="margin-left: 15px; margin-top: 15px;">WISHLIST</div>
+                        <div style="margin-left: 15px; margin-top: 5px;"><button
+                                style="padding: 10px; border: none;border-radius: 20px;background-color:#E91D62;cursor: pointer; color: white;">REGISTER</button>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    style="background-image: url(https://i.ibb.co/mb7swmY/natural-2.jpg);width: 100%; height: 520px; background-repeat: no-repeat; background-size: cover;">
+                    <!-- <img style="width: 100%; height: 320px; background-repeat: no-repeat; background-size: cover;" src="https://i.ibb.co/5LGBWtb/natural-1.jpg" alt=""> -->
+                    <div style="padding-bottom: 40px;">
+                        <div style="display: flex;justify-content: space-around;  padding: 15px;padding-top: 120px;">
+                            <div style="margin-top: 8px; color: white ;cursor: pointer;">
+                                <span style="margin-left: 20px; font-size: 25px;">Transparent</span>
+                            </div>
+                            <div style="color: white ;cursor: pointer; display: flex;">
+                                <div style="margin-left: 20px; margin-top: 10px;"><i style="color: white;"
+                                        class="fa-brands fa-twitter"></i> TWITTER</div>
+                                <div style="margin-left: 20px; margin-top: 10px;"><i
+                                        class="fa-brands fa-square-facebook" style="color: white;"></i> FACEBOOK</div>
+                                <div style="margin-left: 20px; margin-top: 10px;"> <i class="fa-brands fa-instagram"
+                                        style="color: white;"></i> INSTAGRAM</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <!-- navigation tabs -->
+
+            <div style="margin-top: 60px ; background-color: #EEEEEE;padding: 30px;">
+                <div>
+                    <h3>Navigation Tabs</h3>
+                </div>
+                <div style="display: flex; margin-left: 25px;">
+
+                    <div style="margin-right: 30px;">
+                        <p>Tabs with icons Card</p>
+                        <div style="background: linear-gradient(
+                        to right, #9326fa, #7D20D4, 
+                        #350463, #340461, #350264); border-radius: 5px; padding: 7px;">
+                            <ul
+                                style="list-style: none; width: 400px; display: flex; padding-right: 100px; color: white;">
+                                <li><button
+                                        style="padding: 10px;background-color:#ca77dd;cursor: pointer; color: white; border: none; border-radius: 7px;">
+                                        <i style="color: white;" class="fa-solid fa-user"> </i> PROFILE</button></li>
+                                <li style="margin-left: 15px; margin-top: 10px;"><i class="fa-solid fa-message"
+                                        style="color: white;"></i> MESSAGES</li>
+                                <li style="margin-left: 15px; margin-top: 10px;"><i class="fa-solid fa-wrench"
+                                        style="color: white;"></i> SETTINGS</li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div>
+
+                        <div style="margin-left: 30px;">
+                            <p>Tabs with icons Card</p>
+                            <div style="background: linear-gradient(
+                        to right, #ED504D, #eb3f3c, 
+                        #ec2a27, #e4120e, #d80c09); border-radius: 5px; padding: 7px;">
+                                <ul
+                                    style="list-style: none; width: 400px; display: flex; padding-right: 100px; color: white;">
+                                    <li><button
+                                            style="padding: 10px;background-color:#F17470;cursor: pointer; color: white; border: none; border-radius: 7px;">HOME</button>
+                                    </li>
+                                    <li style="margin-left: 15px; margin-top: 10px;cursor: pointer; ">UPDATE</li>
+                                    <li style="margin-left: 15px; margin-top: 10px;cursor: pointer;">HISTORY</li>
+
+                                </ul>
+                            </div>
+                            <div>
+                                <p style="padding-top: 20px;">I think that's a responsibility that I have, to push
+                                    possibilities, to show people,
+                                    this is the level that things could be at So when you get something that has
+                                    the name Kanye West on it, it's supposed to be pushing the furthest
+                                    possibilities. I will be the leader of a company that ends up being worth billions
+                                    of dollars, because I got the answers. I understand culture. I am the nucleus.</p>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div style="width: 560px; height: 200px; padding: 20px;background-color: white; margin-top: -230px;">
+                    <p style="padding-top: 20px;">I think that's a responsibility that I have, to push possibilities, to
+                        show people,
+                        this is the level that things could be at So when you get something that has
+                        the name Kanye West on it, it's supposed to be pushing the furthest
+                        possibilities. I will be the leader of a company that ends up being worth billions
+                        of dollars, because I got the answers. I understand culture. I am the nucleus.</p>
+                </div>
+            </div>
+
+            <!-- Navigation pills -->
+
+            <div style="margin-top: 60px ;margin-left: 50px;">
+                <h3>Navigation Pills</h3>
+                <p>with icons</p>
+                <div style="display: flex;">
+                    <!-- left side -->
+                    <div>
+                        <div style="display: flex;">
+                            <div
+                                style="width: 150px; height: 120px; background-color: #7D20D4; border-radius: 5px; padding: 10px; color: white;margin-left: 15px;">
+                                <span><i class="fa-brands fa-windows"
+                                        style="padding-top: 30px; padding-left: 60px; padding-bottom: 30px;"></i><br><span
+                                        style=" margin-left: 10px;"> DASHBOARD</span></span>
+                            </div>
+                            <div
+                                style="width: 150px; height: 120px; border-radius: 5px; padding: 10px; color: black;margin-left: 15px;">
+                                <span><i class="fa-regular fa-clock"
+                                        style="padding-top: 30px; padding-left: 60px; padding-bottom: 30px;"><br></i><span
+                                        style=" margin-left: 20px;">SCHEDULE</span></span>
+                            </div>
+                            <div
+                                style="width: 150px; height: 120px;  border-radius: 5px; padding: 10px; color: black;margin-left: 15px;">
+                                <span><i class="fa-solid fa-list-check"
+                                        style="padding-top: 30px; padding-left: 60px; padding-bottom: 30px;"></i><br>
+                                    <span style=" margin-left: 50px;">TASK</span></span>
+                            </div>
+                        </div>
+                        <div style="width: 600px;">
+                            <div>
+                                <p>Collaboratively administrate empowered markets via plug-and-play networks.
+                                    Dynamically procrastinate B2C users after installed base benefits</p>
+                            </div>
+                            <div>
+                                <p>Dynamically procrastinate B2C users after installed base benefits
+                                    Dramatically visualize customer directed convergence without revolutionary ROI.
+                                    Collaboratively administrate empowered markets via plug-and-play networks.
+                                    Dynamically procrastinate B2C users after installed base benefits.</p>
+                            </div>
+                            <div>
+                                <p>Dramatically visualize customer directed convergence without revolutionary ROI.
+                                    Collaboratively administrate empowered markets via plug-and-play networks.
+                                    Dynamically procrastinate B2C users after installed base benefits.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- right side -->
+                    <div>
+                        <div style="display: flex;">
+                            <div>
+                                <div
+                                    style="width: 150px; height: 120px; background-color: #E91D62; border-radius: 5px; padding: 10px; color: white;margin-left: 15px;">
+                                    <span><i class="fa-brands fa-windows"
+                                            style="padding-top: 30px; padding-left: 60px; padding-bottom: 30px;"></i><br><span
+                                            style=" margin-left: 10px;"> DASHBOARD</span></span>
+                                </div>
+                            </div>
+                            <div style="padding-bottom: 20px;padding-left: 20px;padding-right: 20px;">
+                                <div>
+                                    <p>Collaboratively administrate empowered markets via plug-and-play networks.
+                                        Dynamically procrastinate B2C users after installed base benefits</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="display: flex;">
+                            <div
+                                style="width: 150px; height: 120px; border-radius: 5px; padding: 10px; color: black;margin-left: 15px;">
+                                <span><i class="fa-regular fa-clock"
+                                        style="padding-top: 30px; padding-left: 60px; padding-bottom: 30px;"><br></i><span
+                                        style=" margin-left: 20px;">SCHEDULE</span></span>
+                            </div>
+                            <div style="padding-top: 20px;padding-bottom: 20px;padding-left: 50px;padding-right: 20px;">
+                                <div>
+                                    <p>Collaboratively administrate empowered markets via plug-and-play networks.
+                                        Dynamically procrastinate B2C users after installed base benefits</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="display: flex;">
+
+                            <div
+                                style="padding-top: 20px;padding-bottom: 20px;padding-left: 210px;padding-right: 20px;">
+                                <div>
+                                    <p>Collaboratively administrate empowered markets via plug-and-play networks.
+                                        Dynamically procrastinate B2C users after installed base benefits</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Notification -->
+
+            <div style="margin-top: 60px ;">
+                <h3 style="margin-left: 70px;">Notification</h3>
+                <div style="margin-top: 25px ;">
+                    <!-- info alert -->
+                    <div style="display: flex;justify-content: space-around; background-color: #05ABC1; padding: 15px;">
+                        <div style="margin-top: 8px; color: white ;cursor: pointer;">
+                            <span style="margin-left: 10px;"><span style="color: white; font-weight: bolder; font-size: 20px;"><i class="fa-solid fa-circle-exclamation" style="color: white;"></i> INFO ALERT:</span> You've got some friends nearby, stop looking at your phone and find them...</span>
+                        </div>
+                        <div style="color: white ;cursor: pointer; display: flex;">
+                           
+                            <div style="margin-left: 15px; margin-top: 10px;"><i class="fa-regular fa-circle-xmark" style="color: white;"></i></div>
+                        </div>
+                    </div>
+                    <!-- success alert -->
+                    <div style="display: flex;justify-content: space-around; background-color: #5BB760; padding: 15px; margin-top: 20px;">
+                        <div style="margin-top: 8px; color: white ;cursor: pointer;">
+                            <span style="margin-left: 10px;"><span style="color: white; font-weight: bolder; font-size: 20px;"><i class="fa-solid fa-check" style="color: white;"></i> SUCCESS ALERT:</span> You've got some friends nearby, stop looking at your phone and find them...</span>
+                        </div>
+                        <div style="color: white ;cursor: pointer; display: flex;">
+                           
+                            <div style="margin-left: 15px; margin-top: 10px;"><i class="fa-regular fa-circle-xmark" style="color: white;"></i></div>
+                        </div>
+                    </div>
+                    <!-- WARNING ALERT -->
+                    <div style="display: flex;justify-content: space-around; background-color: #FFA119; padding: 15px; margin-top: 20px;">
+                        <div style="margin-top: 8px; color: white ;cursor: pointer;">
+                            <span style="margin-left: 10px;"><span style="color: white; font-weight: bolder; font-size: 20px;"><i class="fa-solid fa-triangle-exclamation" style="color: white;"></i> WARNING ALERT:</span> You've got some friends nearby, stop looking at your phone and find them...</span>
+                        </div>
+                        <div style="color: white ;cursor: pointer; display: flex;">
+                           
+                            <div style="margin-left: 15px; margin-top: 10px;"><i class="fa-regular fa-circle-xmark" style="color: white;"></i></div>
+                        </div>
+                    </div>
+
+                    <!-- DANGER ALERT -->
+                    <div style="display: flex;justify-content: space-around; background-color: #F45A4E; padding: 15px; margin-top: 20px;">
+                        <div style="margin-top: 8px; color: white ;cursor: pointer;">
+                            <span style="margin-left: 10px;"><span style="color: white; font-weight: bolder; font-size: 20px;"><i class="fa-solid fa-circle-exclamation"></i> DANGER ALERT:</span> You've got some friends nearby, stop looking at your phone and find them...</span>
+                        </div>
+                        <div style="color: white ;cursor: pointer; display: flex;">
+                           
+                            <div style="margin-left: 15px; margin-top: 10px;"><i class="fa-regular fa-circle-xmark" style="color: white;"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
+<!-- style="margin-top: 60px ;margin-left: 90px;" -->
